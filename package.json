@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "15.0.1",
+    "prettier": "^3.3.3",
     "react": "19.0.0-rc-cae764ce-20241025",
     "react-dom": "19.0.0-rc-cae764ce-20241025"
   },
