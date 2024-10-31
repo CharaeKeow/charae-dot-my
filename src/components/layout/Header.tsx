@@ -11,7 +11,7 @@ const Header = () => {
         {/* // TODO: Maybe should extract this into separate component, but maybe do that once there's more item in navbar */}
         <nav className="text-xl font-bold">
           <ul>
-            <li className="hover:text-[#ff7f00]">
+            <li className="hover:text-orange-main">
               <Link href="#">About</Link>
             </li>
           </ul>

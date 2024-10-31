@@ -1,5 +1,9 @@
+import Bio from '@/features/home/components/Bio';
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 font-[family-name:var(--font-geist-sans)] sm:p-20"></div>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 font-[family-name:var(--font-geist-sans)] sm:p-20">
+      <Bio />
+    </div>
   );
 }
