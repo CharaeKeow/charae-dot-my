@@ -48,7 +48,8 @@
               "parent",
               "sibling",
               "index",
-              "object"
+              "object",
+              "type"
             ],
             "newlines-between": "always",
             "alphabetize": { "order": "asc", "caseInsensitive": true }
