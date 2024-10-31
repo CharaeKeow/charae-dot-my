@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import avatarImage from "@/assets/avatar.png";
-import Link from "next/link";
+import avatarImage from '@/assets/avatar.png';
+import Link from 'next/link';
 
 const Header = () => {
   return (

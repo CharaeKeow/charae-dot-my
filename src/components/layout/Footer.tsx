@@ -1,5 +1,6 @@
 const Footer = () => {
-  return <footer>Made with love by Charae</footer>;
+  // TODO: Footer content
+  return <footer className="text-center"></footer>;
 };
 
 export default Footer;
