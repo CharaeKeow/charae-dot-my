@@ -1,39 +1,10 @@
 import React from 'react';
 
-// TODO: Extract these `as const` and type into separate file
-const SOCIALS_SITE = {
-  Twitter: 'Twitter',
-  BlueSky: 'BlueSky',
-  GitHub: 'GitHub',
-  LinkedIn: 'LinkedIn',
-} as const;
-
-type Socials = {
-  name: keyof typeof SOCIALS_SITE;
-  link: string;
-};
-
-// TODO: Extract this too. Maybe into `@/config`?
-const socials: Socials[] = [
-  {
-    name: SOCIALS_SITE.Twitter,
-    link: 'https://twitter.com/charae_keow',
-  },
-  {
-    name: SOCIALS_SITE.BlueSky,
-    link: 'https://bsky.app/profile/charaekeow.bsky.social',
-  },
-  {
-    name: SOCIALS_SITE.GitHub,
-    link: 'https://github.com/CharaeKeow',
-  },
-  {
-    name: SOCIALS_SITE.LinkedIn,
-    link: 'https://www.linkedin.com/in/charaeehsin',
-  },
-];
+import getSocials from '../lib/get-socials';
 
 const Bio = () => {
+  const socials = getSocials();
+
   return (
     <div className="flex flex-col gap-y-8">
       <h1>
