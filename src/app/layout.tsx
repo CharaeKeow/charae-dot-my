@@ -36,7 +36,7 @@ export default function RootLayout({
       >
         {/* Temporary banner to indicate site is still under development. Only show
         on prod. Eventually this will be removed. */}
-        {!isVercelProd ? (
+        {isVercelProd ? (
           <div className="bg-black p-1 text-center text-sm text-white">
             🚧 Heads Up: We’re still setting things up around here! 🚧
           </div>
