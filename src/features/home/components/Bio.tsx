@@ -6,11 +6,11 @@ const Bio = () => {
   const socials = getSocials();
 
   return (
-    <div className="flex flex-col gap-y-8">
-      <h1>
+    <section>
+      <h1 className="text-4xl lg:text-5xl">
         <span className="text-orange-main">Charae</span> Eh Sin
       </h1>
-      <div>
+      <div className="mt-6 lg:mt-8">
         <p>
           Hi, I’m Charae, a web developer based in Malaysia who loves
           experimenting and exploring cool stuff on the internet. When I’m not
@@ -44,7 +44,7 @@ const Bio = () => {
           .
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
