@@ -21,7 +21,7 @@ export default function getWorkExperience(): WorkExperienceData[] {
       jobTitle: 'Junior Web Developer',
       date: 'February 2024 - Present',
       description:
-        'Develop and maintain student-facing websites and an internal platform for education counselors. It’s rewarding to work on projects that make a real impact in the education space.',
+        'Develop and maintain student-facing websites and an internal platform for education counselors at Malaysia’s largest university enrollment platform. It’s rewarding to work on projects that make a real impact in the education space.',
       image: ueLogo,
       techStack: [
         'Next.js',
