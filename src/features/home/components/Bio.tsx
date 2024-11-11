@@ -6,7 +6,7 @@ const Bio = () => {
   const socials = getSocials();
 
   return (
-    <section>
+    <section className="p-4 lg:p-8">
       <h1 className="text-4xl lg:text-5xl">
         <span className="text-orange-main">Charae</span> Eh Sin
       </h1>
