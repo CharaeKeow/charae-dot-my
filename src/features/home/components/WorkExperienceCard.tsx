@@ -28,8 +28,16 @@ const WorkExperienceCard = ({
     type: 'unit',
   });
 
-  const { company, date, description, image, jobTitle, techStack, otherStack } =
-    data;
+  const {
+    company,
+    companyLink,
+    date,
+    description,
+    image,
+    jobTitle,
+    techStack,
+    otherStack,
+  } = data;
 
   const isHasOtherStack = otherStack ? true : false;
   const mainStackText = isHasOtherStack ? 'Main stack' : 'Tech stack';
@@ -43,7 +51,14 @@ const WorkExperienceCard = ({
       {/* Experience details */}
       <div className="flex w-fit flex-col gap-y-2">
         <h3 className="text-xl lg:text-2xl">{jobTitle}</h3>
-        <h4 className="text-lg lg:text-xl">{company}</h4>
+        <a
+          href={companyLink}
+          target="_blank"
+          className="w-fit text-lg font-semibold hover:underline lg:text-xl"
+          rel="noreferrer"
+        >
+          {company}
+        </a>
         <span className="italic">{date}</span>
         <p>{description}</p>
         <span>

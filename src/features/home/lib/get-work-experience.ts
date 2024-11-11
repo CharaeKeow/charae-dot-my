@@ -8,6 +8,7 @@ export type WorkExperienceData = {
   image: StaticImageData;
   jobTitle: string;
   company: string;
+  companyLink: string;
   date: string;
   description: string;
   techStack: string[];
@@ -18,6 +19,7 @@ export default function getWorkExperience(): WorkExperienceData[] {
   return [
     {
       company: 'Uni Enrol',
+      companyLink: 'https://unienrol.com',
       jobTitle: 'Junior Web Developer',
       date: 'February 2024 - Present',
       description:
@@ -38,6 +40,7 @@ export default function getWorkExperience(): WorkExperienceData[] {
     },
     {
       company: 'Plentisoft',
+      companyLink: 'https://plentisoft.com',
       jobTitle: 'Full Stack Web Developer',
       date: 'August 2022 - September 2023',
       description:
@@ -59,6 +62,7 @@ export default function getWorkExperience(): WorkExperienceData[] {
     },
     {
       company: 'Efichain Solutions',
+      companyLink: 'https://www.efichain.com',
       jobTitle: 'Full Stack Web Developer Intern',
       date: 'March 2022 - August 2022',
       description:
