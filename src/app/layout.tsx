@@ -27,21 +27,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isVercelProd = process.env.VERCEL_ENV === 'production';
-
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Temporary banner to indicate site is still under development. Only show
-        on prod. Eventually this will be removed. */}
-        {isVercelProd ? (
-          <div className="bg-black p-1 text-center text-sm text-white">
-            🚧 Heads Up: We’re still setting things up around here! 🚧
-          </div>
-        ) : null}
-        <div className="mx-auto flex h-screen max-w-4xl flex-col justify-between">
+        <div className="h-screen">
           <Header />
           {children}
           <Footer />

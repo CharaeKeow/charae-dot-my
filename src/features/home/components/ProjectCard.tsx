@@ -10,13 +10,13 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
   const { description, link, stack, tags, title } = data;
 
   return (
-    <div className="flex h-fit flex-col gap-y-3 rounded-sm border border-[#d1d9e0] p-4">
+    <div className="flex h-fit flex-col gap-y-3 rounded-sm border border-gray-main p-4">
       <h3 className="text-xl lg:text-2xl">{title}</h3>
       <p>{description}</p>
       <div className="flex gap-x-2">
         {stack.map((text, index) => (
           <div
-            className="w-fit rounded-full bg-[#fcbf49] px-2.5 py-0.5 text-xs font-bold leading-[14px] transition-colors hover:bg-[#fcbf49]/80"
+            className="w-fit rounded-full bg-yellow-main px-2.5 py-0.5 text-xs font-bold leading-[14px] transition-colors hover:bg-yellow-main/80"
             key={index}
           >
             {text}
@@ -27,7 +27,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
         {tags.map((text, index) => (
           <div
             key={index}
-            className="w-fit rounded-sm bg-[#003049] px-2.5 py-2 text-xs font-bold leading-[14px] text-white transition-colors hover:bg-[#003049]/90"
+            className="w-fit rounded-sm bg-blue-main px-2.5 py-2 text-xs font-bold leading-[14px] text-white transition-colors hover:bg-blue-main/90"
           >
             {text}
           </div>

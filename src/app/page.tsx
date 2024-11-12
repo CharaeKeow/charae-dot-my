@@ -5,7 +5,7 @@ import WorkExperienceSection from '@/features/home/components/WorkExperienceSect
 
 export default function Home() {
   return (
-    <div className="flex h-full flex-col justify-start font-[family-name:var(--font-geist-sans)]">
+    <div className="mx-auto flex max-w-4xl flex-col justify-start font-[family-name:var(--font-geist-sans)]">
       <BioSection />
       <ToolbeltSection />
       <WorkExperienceSection />
