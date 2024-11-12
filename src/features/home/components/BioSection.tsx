@@ -1,12 +1,12 @@
 import React from 'react';
 
-import getSocials from '../lib/get-socials';
+import SectionContainer from '@/components/ui/SectionContainer';
 
-const Bio = () => {
-  const socials = getSocials();
+import { socials } from '../data/socials';
 
+const BioSection = () => {
   return (
-    <section className="p-4 lg:p-8">
+    <SectionContainer>
       <h1 className="text-4xl lg:text-5xl">
         <span className="text-orange-main">Charae</span> Eh Sin
       </h1>
@@ -44,8 +44,8 @@ const Bio = () => {
           .
         </p>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
-export default Bio;
+export default BioSection;

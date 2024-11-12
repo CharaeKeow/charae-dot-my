@@ -1,28 +1,12 @@
 import Image from 'next/image';
 
-import { WorkExperienceData } from '../lib/get-work-experience';
+import type { WorkExperienceData } from '../types';
 
 type WorkExperienceCardProps = {
-  // image: StaticImageData;
-  // jobTitle: string;
-  // company: string;
-  // date: string;
-  // description: string;
-  // techStack: string[];
-  // otherStack?: string[];
   data: WorkExperienceData;
 };
 
-const WorkExperienceCard = ({
-  // company,
-  // date,
-  // description,
-  // image,
-  // jobTitle,
-  // techStack,
-  // otherStack,
-  data,
-}: WorkExperienceCardProps) => {
+const WorkExperienceCard = ({ data }: WorkExperienceCardProps) => {
   const formatter = new Intl.ListFormat('en', {
     style: 'short',
     type: 'unit',

@@ -1,10 +1,10 @@
-import getToolbelts from '../lib/get-toolbelts';
+import SectionContainer from '@/components/ui/SectionContainer';
 
-const Toolbelt = () => {
-  const toolbelts = getToolbelts();
+import { toolbelts } from '../data/toolbelts';
 
+const ToolbeltSection = () => {
   return (
-    <section className="p-4 lg:p-8">
+    <SectionContainer>
       <h2 className="text-[28px] lg:text-[32px]">My Go-to Toolbelt</h2>
       <div className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4 lg:mt-8 lg:justify-start lg:gap-x-12">
         {toolbelts.map((tool, index) => {
@@ -21,8 +21,8 @@ const Toolbelt = () => {
           );
         })}
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
-export default Toolbelt;
+export default ToolbeltSection;
