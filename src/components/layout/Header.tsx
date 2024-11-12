@@ -19,7 +19,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="size-[72px]">
+        <div className="size-12 lg:size-[72px]">
           <Image
             className="aspect-square size-full rounded-full"
             src={avatarImage}
