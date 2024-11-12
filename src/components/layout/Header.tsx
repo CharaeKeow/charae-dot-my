@@ -5,7 +5,7 @@ import avatarImage from '@/assets/avatar.png';
 const Header = () => {
   return (
     <header>
-      <div className="flex items-center justify-between p-4 lg:p-8">
+      <div className="mx-auto flex max-w-4xl items-center justify-between p-4 lg:p-8">
         {/* Currently only have one. Eventually will add more - e.g. blog */}
         {/* // TODO: Maybe should extract this into separate component, but maybe do that once there's more item in navbar */}
         <nav className="text-xl font-bold">

@@ -41,7 +41,7 @@ export default function RootLayout({
             🚧 Heads Up: We’re still setting things up around here! 🚧
           </div>
         ) : null}
-        <div className="mx-auto flex h-screen max-w-4xl flex-col justify-between">
+        <div className="h-screen">
           <Header />
           {children}
           <Footer />
