@@ -16,3 +16,11 @@ export type WorkExperienceData = {
   techStack: string[];
   otherStack?: string[];
 };
+
+export type Project = {
+  title: string;
+  description: string;
+  stack: string[];
+  tags: string[];
+  link: string;
+};

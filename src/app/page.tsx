@@ -1,4 +1,5 @@
 import BioSection from '@/features/home/components/BioSection';
+import ProjectSection from '@/features/home/components/ProjectSection';
 import ToolbeltSection from '@/features/home/components/ToolbeltSection';
 import WorkExperienceSection from '@/features/home/components/WorkExperienceSection';
 
@@ -8,6 +9,7 @@ export default function Home() {
       <BioSection />
       <ToolbeltSection />
       <WorkExperienceSection />
+      <ProjectSection />
     </div>
   );
 }
