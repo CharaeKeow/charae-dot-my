@@ -8,7 +8,7 @@ const Footer = () => {
           href="https://github.com/CharaeKeow/charae-dot-my"
           target="_blank"
           rel="noreferrer"
-          className="block hover:underline sm:inline"
+          className="block hover:underline md:inline"
         >
           View source code
         </a>
