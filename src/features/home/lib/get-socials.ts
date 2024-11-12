@@ -1,5 +1,6 @@
 import { SOCIALS_SITE } from '../constants';
-import { Socials } from '../types';
+
+import type { Socials } from '../types';
 
 export default function getSocials() {
   const socials: Socials[] = [

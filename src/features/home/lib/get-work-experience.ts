@@ -1,19 +1,8 @@
-import { StaticImageData } from 'next/image';
-
 import efichainLogo from '@/assets/png/efichain-logo.png';
 import plentisoftLogo from '@/assets/png/plentisoft-logo.png';
 import ueLogo from '@/assets/png/ue-logo.png';
 
-export type WorkExperienceData = {
-  image: StaticImageData;
-  jobTitle: string;
-  company: string;
-  companyLink: string;
-  date: string;
-  description: string;
-  techStack: string[];
-  otherStack?: string[];
-};
+import type { WorkExperienceData } from '../types';
 
 export default function getWorkExperience(): WorkExperienceData[] {
   return [
