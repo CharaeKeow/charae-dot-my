@@ -1,6 +1,20 @@
 const Footer = () => {
-  // TODO: Footer content
-  return <footer className="flex text-balance text-center"></footer>;
+  return (
+    <footer className="flex w-full justify-center text-balance bg-[#003049] py-1 text-center text-white">
+      <span>
+        © 2024 Made with 🧡 by Charae
+        <span className="hidden md:inline">{' | '}</span>
+        <a
+          href="https://github.com/CharaeKeow/charae-dot-my"
+          target="_blank"
+          rel="noreferrer"
+          className="block hover:underline sm:inline"
+        >
+          View source code
+        </a>
+      </span>
+    </footer>
+  );
 };
 
 export default Footer;
