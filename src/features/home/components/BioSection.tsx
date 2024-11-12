@@ -1,10 +1,12 @@
 import React from 'react';
 
+import SectionContainer from '@/components/SectionContainer';
+
 import { socials } from '../data/socials';
 
 const BioSection = () => {
   return (
-    <section className="p-4 lg:p-8">
+    <SectionContainer>
       <h1 className="text-4xl lg:text-5xl">
         <span className="text-orange-main">Charae</span> Eh Sin
       </h1>
@@ -42,7 +44,7 @@ const BioSection = () => {
           .
         </p>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
