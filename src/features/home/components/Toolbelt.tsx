@@ -1,8 +1,6 @@
-import getToolbelts from '../lib/get-toolbelts';
+import { toolbelts } from '../data/toolbelts';
 
 const Toolbelt = () => {
-  const toolbelts = getToolbelts();
-
   return (
     <section className="p-4 lg:p-8">
       <h2 className="text-[28px] lg:text-[32px]">My Go-to Toolbelt</h2>

@@ -1,10 +1,8 @@
-import getWorkExperience from '../lib/get-work-experience';
+import { workExperience } from '../data/work-experience';
 
 import WorkExperienceCard from './WorkExperienceCard';
 
 const WorkExperience = () => {
-  const workExperience = getWorkExperience();
-
   return (
     <section className="p-4 lg:p-8">
       <h2 className="text-[28px] lg:text-[32px]">Professional Experience</h2>

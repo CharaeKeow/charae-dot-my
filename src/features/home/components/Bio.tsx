@@ -1,10 +1,8 @@
 import React from 'react';
 
-import getSocials from '../lib/get-socials';
+import { socials } from '../data/socials';
 
 const Bio = () => {
-  const socials = getSocials();
-
   return (
     <section className="p-4 lg:p-8">
       <h1 className="text-4xl lg:text-5xl">
