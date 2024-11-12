@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SectionContainer from '@/components/SectionContainer';
+import SectionContainer from '@/components/ui/SectionContainer';
 
 import { socials } from '../data/socials';
 
