@@ -2,7 +2,7 @@ import React from 'react';
 
 import { socials } from '../data/socials';
 
-const Bio = () => {
+const BioSection = () => {
   return (
     <section className="p-4 lg:p-8">
       <h1 className="text-4xl lg:text-5xl">
@@ -46,4 +46,4 @@ const Bio = () => {
   );
 };
 
-export default Bio;
+export default BioSection;
