@@ -18,6 +18,15 @@ const config: Config = {
         orange: {
           main: 'var(--orange)',
         },
+        blue: {
+          main: '#003049',
+        },
+        yellow: {
+          main: '#fcbf49',
+        },
+        gray: {
+          main: '#d1d9e0',
+        },
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',

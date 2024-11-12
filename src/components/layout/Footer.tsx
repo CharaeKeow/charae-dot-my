@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex w-full justify-center text-balance bg-[#003049] py-1 text-center text-white">
+    <footer className="flex w-full justify-center text-balance bg-blue-main py-1 text-center text-white">
       <span>
         © 2024 Made with 🧡 by Charae
         <span className="hidden md:inline">{' | '}</span>
