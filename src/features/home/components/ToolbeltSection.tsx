@@ -11,10 +11,7 @@ const ToolbeltSection = () => {
           const LogoComponent = tool.logo;
 
           return (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-between gap-y-2"
-            >
+            <div key={index} className="flex flex-col items-center justify-between gap-y-2">
               <LogoComponent className="size-8 md:size-10" />
               <span>{tool.name}</span>
             </div>

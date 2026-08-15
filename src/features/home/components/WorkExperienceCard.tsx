@@ -12,16 +12,7 @@ const WorkExperienceCard = ({ data }: WorkExperienceCardProps) => {
     type: 'unit',
   });
 
-  const {
-    company,
-    companyLink,
-    date,
-    description,
-    image,
-    jobTitle,
-    techStack,
-    otherStack,
-  } = data;
+  const { company, companyLink, date, description, image, jobTitle, techStack, otherStack } = data;
 
   const isHasOtherStack = otherStack ? true : false;
   const mainStackText = isHasOtherStack ? 'Main stack' : 'Tech stack';

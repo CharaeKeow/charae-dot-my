@@ -1,7 +1,6 @@
 import SectionContainer from '@/components/ui/SectionContainer';
 
 import { workExperience } from '../data/work-experience';
-
 import WorkExperienceCard from './WorkExperienceCard';
 
 const WorkExperienceSection = () => {
