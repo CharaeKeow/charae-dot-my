@@ -2,46 +2,34 @@ import React from 'react';
 
 import SectionContainer from '@/components/ui/SectionContainer';
 
-import { socials } from '../data/socials';
-
 const BioSection = () => {
   return (
     <SectionContainer>
       <h1 className="text-4xl lg:text-5xl">
         <span className="text-orange-main">Charae</span> Eh Sin
       </h1>
-      <div className="mt-6 lg:mt-8">
+      <div className="mt-6 lg:mt-8 space-y-4">
         <p>
-          Hi, I’m Charae, a web developer based in Malaysia who loves
-          experimenting and exploring cool stuff on the internet. When I’m not
-          coding, you can usually find me at the gym, out for a run, tending my
-          farm in Stardew Valley, or attending tech meetups (if my social energy
-          permits).
+          Hello, I am Charae. I'm a full-stack developer from Malaysia,
+          currently working on the platform team at{' '}
+          <a
+            className="underline"
+            href="https://www.allocatespace.co/"
+            target="_blank"
+          >
+            Allocate Space.
+          </a>
         </p>
-        <br />
         <p>
-          You can also find me on{' '}
-          {/* Okay I might be overengineering this, but this is fun at least LMAO */}
-          {socials.map((social, index) => {
-            const isLastItem = index === socials.length - 1;
-            const isSecondToLastItem = index === socials.length - 2;
-
-            return (
-              <React.Fragment key={index}>
-                <a
-                  href={social.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-orange-main hover:underline"
-                >
-                  {social.name}
-                </a>
-                {!isLastItem ? ', ' : ''}
-                {isSecondToLastItem ? 'and ' : ''}
-              </React.Fragment>
-            );
-          })}
-          .
+          I got into tech back in 2016/17, while studying aircraft maintenance.
+          My Windows laptop was slow, so I installed Ubuntu. That somehow led to
+          me messing around with the terminal (going through a Bash manual at
+          one point), learning Python, and eventually discovering web
+          development through freeCodeCamp.
+        </p>
+        <p>
+          Today, I enjoy building and shipping stuff at work, learning new
+          things, and figuring out how things work.
         </p>
       </div>
     </SectionContainer>

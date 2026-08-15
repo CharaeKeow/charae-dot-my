@@ -1,22 +1,15 @@
-import { SOCIALS_SITE } from '../constants';
-
-import type { Socials } from '../types';
+type Socials = {
+  name: string;
+  link: string;
+};
 
 export const socials: Socials[] = [
   {
-    name: SOCIALS_SITE.Twitter,
-    link: 'https://twitter.com/charae_keow',
-  },
-  {
-    name: SOCIALS_SITE.BlueSky,
-    link: 'https://bsky.app/profile/charaekeow.bsky.social',
-  },
-  {
-    name: SOCIALS_SITE.GitHub,
+    name: 'GitHub',
     link: 'https://github.com/CharaeKeow',
   },
   {
-    name: SOCIALS_SITE.LinkedIn,
+    name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/charaeehsin',
   },
 ];
