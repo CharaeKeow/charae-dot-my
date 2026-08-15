@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SectionContainer from '@/components/ui/SectionContainer';
+import SectionContainer from '@/components/ui/section-container';
 
 const BioSection = () => {
   return (

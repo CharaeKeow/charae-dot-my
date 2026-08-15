@@ -1,4 +1,4 @@
-import SectionContainer from '@/components/ui/SectionContainer';
+import SectionContainer from '@/components/ui/section-container';
 
 import { toolbelts } from '../data/toolbelts';
 

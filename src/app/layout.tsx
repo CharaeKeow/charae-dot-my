@@ -3,8 +3,8 @@ import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
-import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/footer';
+import Header from '@/components/layout/header';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',

@@ -1,7 +1,7 @@
-import SectionContainer from '@/components/ui/SectionContainer';
+import SectionContainer from '@/components/ui/section-container';
 
 import { projects } from '../data/projects';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './project-card';
 
 const ProjectSection = () => {
   return (

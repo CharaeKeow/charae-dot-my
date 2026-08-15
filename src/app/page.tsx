@@ -1,7 +1,7 @@
-import BioSection from '@/features/home/components/BioSection';
-import ProjectSection from '@/features/home/components/ProjectSection';
-import ToolbeltSection from '@/features/home/components/ToolbeltSection';
-import WorkExperienceSection from '@/features/home/components/WorkExperienceSection';
+import BioSection from '@/features/home/components/bio-section';
+import ProjectSection from '@/features/home/components/project-section';
+import ToolbeltSection from '@/features/home/components/toolbelt-section';
+import WorkExperienceSection from '@/features/home/components/work-experience-section';
 
 export default function Home() {
   return (
