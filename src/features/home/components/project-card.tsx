@@ -1,12 +1,12 @@
-import GithubLogo from '@/assets/svg/github-logo.svg';
+import GithubLogo from "@/assets/svg/github-logo.svg";
 
-import type { Project } from '../types';
+import type { Project } from "../types";
 
 type ProjectCardProps = {
   data: Project;
 };
 
-const ProjectCard = ({ data }: ProjectCardProps) => {
+export const ProjectCard = ({ data }: ProjectCardProps) => {
   const { description, link, stack, tags, title } = data;
 
   return (
@@ -16,7 +16,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
       <div className="flex gap-x-2">
         {stack.map((text, index) => (
           <div
-            className="w-fit rounded-full bg-yellow-main px-2.5 py-0.5 text-xs font-bold leading-[14px] transition-colors hover:bg-yellow-main/80"
+            className="w-fit rounded-full bg-yellow-main px-2.5 py-0.5 text-xs font-bold leading-3.5 transition-colors hover:bg-yellow-main/80"
             key={index}
           >
             {text}
@@ -27,7 +27,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
         {tags.map((text, index) => (
           <div
             key={index}
-            className="w-fit rounded-sm bg-blue-main px-2.5 py-2 text-xs font-bold leading-[14px] text-white transition-colors hover:bg-blue-main/90"
+            className="w-fit rounded-sm bg-blue-main px-2.5 py-2 text-xs font-bold leading-3.5 text-white transition-colors hover:bg-blue-main/90"
           >
             {text}
           </div>
@@ -46,5 +46,3 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
     </div>
   );
 };
-
-export default ProjectCard;

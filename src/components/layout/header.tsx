@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import avatarImage from '@/assets/avatar.png';
+import avatarImage from "@/assets/avatar.png";
 
-const Header = () => {
+export const Header = () => {
   return (
     <header>
       <div className="mx-auto flex max-w-4xl items-center justify-between p-4 lg:p-8">
@@ -19,7 +19,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="size-12 lg:size-[72px]">
+        <div className="size-12 lg:size-18">
           <Image
             className="aspect-square size-full rounded-full"
             src={avatarImage}
@@ -30,5 +30,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

@@ -1,8 +1,8 @@
-import SectionContainer from '@/components/ui/section-container';
+import { SectionContainer } from "@/components/ui/section-container";
 
-import { toolbelts } from '../data/toolbelts';
+import { toolbelts } from "../data/toolbelts";
 
-const ToolbeltSection = () => {
+export const ToolbeltSection = () => {
   return (
     <SectionContainer>
       <h2 className="text-[28px] lg:text-[32px]">My Go-to Toolbelt</h2>
@@ -11,7 +11,10 @@ const ToolbeltSection = () => {
           const LogoComponent = tool.logo;
 
           return (
-            <div key={index} className="flex flex-col items-center justify-between gap-y-2">
+            <div
+              key={index}
+              className="flex flex-col items-center justify-between gap-y-2"
+            >
               <LogoComponent className="size-8 md:size-10" />
               <span>{tool.name}</span>
             </div>
@@ -21,5 +24,3 @@ const ToolbeltSection = () => {
     </SectionContainer>
   );
 };
-
-export default ToolbeltSection;
