@@ -1,6 +1,6 @@
-import GithubLogo from "@/assets/svg/github-logo.svg";
+import GithubLogo from '@/assets/svg/github-logo.svg';
 
-import type { Project } from "../types";
+import type { Project } from '../types';
 
 type ProjectCardProps = {
   data: Project;

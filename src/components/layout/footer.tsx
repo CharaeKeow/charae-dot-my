@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="flex w-full justify-center text-balance bg-blue-main py-1 text-center text-white">
       <span>
         © 2024 Made with 🧡 by Charae
-        <span className="hidden md:inline">{" | "}</span>
+        <span className="hidden md:inline">{' | '}</span>
         <a
           href="https://github.com/CharaeKeow/charae-dot-my"
           target="_blank"

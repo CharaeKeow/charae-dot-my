@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import avatarImage from "@/assets/avatar.png";
+import avatarImage from '@/assets/avatar.png';
 
 export const Header = () => {
   return (

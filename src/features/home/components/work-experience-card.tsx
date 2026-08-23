@@ -1,26 +1,18 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import type { WorkExperienceData } from "../types";
+import type { WorkExperienceData } from '../types';
 
 type WorkExperienceCardProps = {
   data: WorkExperienceData;
 };
 
 const WorkExperienceCard = ({ data }: WorkExperienceCardProps) => {
-  const formatter = new Intl.ListFormat("en", {
-    style: "short",
-    type: "unit",
+  const formatter = new Intl.ListFormat('en', {
+    style: 'short',
+    type: 'unit',
   });
 
-  const {
-    company,
-    companyLink,
-    date,
-    description,
-    image,
-    jobTitle,
-    techStack,
-  } = data;
+  const { company, companyLink, date, description, image, jobTitle, techStack } = data;
 
   return (
     <div className="flex flex-col gap-4 lg:flex-row lg:gap-x-8">
