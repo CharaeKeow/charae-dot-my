@@ -7,11 +7,7 @@ export const projects: Project[] = [
     title: 'Ruam Thai',
     description: (
       <>
-        I’m rebuilding the website for Ruam Thai, a Malaysian Siamese youth camp and community that
-        has been running since 1993. It currently introduces the camp and preserves some of its
-        history.
-        <br />
-        I’m exploring how it could grow into a directory that helps{' '}
+        I’m rebuilding the website for Ruam Thai, a{' '}
         <a
           href="https://en.wikipedia.org/wiki/Malaysian_Siamese"
           target="_blank"
@@ -21,7 +17,11 @@ export const projects: Project[] = [
           Malaysian Siamese
           <span className="sr-only"> (opens in a new tab)</span>
         </a>{' '}
-        find and connect with one another.
+        youth camp and community that has been running since 1993. It currently introduces the camp
+        and preserves some of its history.
+        <br />
+        Currently exploring how it could grow into a directory that helps Malaysian Siamese find and
+        connect with one another.
       </>
     ),
     website: 'https://ruamthai.charae.my',
