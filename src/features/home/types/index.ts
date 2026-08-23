@@ -16,5 +16,8 @@ export type Project = {
   description: string;
   stack: string[];
   tags: string[];
-  link: string;
+  github?: string;
+  website?: string;
+  logo?: StaticImageData;
+  status?: 'WIP'; // Still not sure if I want this, since software is always in progress :p
 };
