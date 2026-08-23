@@ -9,7 +9,7 @@ type Toolbelt = {
   logo: React.FC<React.SVGProps<SVGElement>>;
 };
 
-export const toolbelts: Toolbelt[] = [
+export const preferredTools: Toolbelt[] = [
   {
     name: 'React',
     logo: ReactLogo,

@@ -1,19 +1,17 @@
 import type { StaticImageData } from 'next/image';
+import type { ReactNode } from 'react';
 
 export type WorkExperienceData = {
-  image: StaticImageData;
   jobTitle: string;
   company: string;
   companyLink: string;
   date: string;
-  description: string;
-  techStack: string[];
-  otherStack?: string[];
+  description: ReactNode;
 };
 
 export type Project = {
   title: string;
-  description: string;
+  description: ReactNode;
   stack: string[];
   tags: string[];
   github?: string;

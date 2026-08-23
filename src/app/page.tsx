@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="mx-auto flex max-w-4xl flex-col justify-start font-(family-name:--font-geist-sans)">
       <BioSection />
-      <ToolbeltSection />
       <WorkExperienceSection />
       <ProjectSection />
+      <ToolbeltSection />
     </div>
   );
 }

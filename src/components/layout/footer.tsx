@@ -1,18 +1,7 @@
 export const Footer = () => {
   return (
-    <footer className="flex w-full justify-center text-balance bg-blue-main py-1 text-center text-white">
-      <span>
-        © 2024 Made with 🧡 by Charae
-        <span className="hidden md:inline">{' | '}</span>
-        <a
-          href="https://github.com/CharaeKeow/charae-dot-my"
-          target="_blank"
-          rel="noreferrer"
-          className="block hover:underline md:inline"
-        >
-          View source code
-        </a>
-      </span>
+    <footer className="flex w-full justify-center bg-amber-500 px-4 py-2 text-center text-black">
+      <p>© {new Date().getFullYear()} Charae Eh Sin</p>
     </footer>
   );
 };
