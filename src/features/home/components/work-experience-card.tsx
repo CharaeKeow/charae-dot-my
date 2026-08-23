@@ -20,11 +20,7 @@ const WorkExperienceCard = ({ data }: WorkExperienceCardProps) => {
     image,
     jobTitle,
     techStack,
-    otherStack,
   } = data;
-
-  const isHasOtherStack = otherStack;
-  const mainStackText = isHasOtherStack ? "Main stack" : "Tech stack";
 
   return (
     <div className="flex flex-col gap-4 lg:flex-row lg:gap-x-8">
@@ -46,15 +42,9 @@ const WorkExperienceCard = ({ data }: WorkExperienceCardProps) => {
         <span className="italic">{date}</span>
         <p>{description}</p>
         <span>
-          <strong>{mainStackText}: </strong>
+          <strong>Tech stack: </strong>
           {formatter.format(techStack)}
         </span>
-        {otherStack ? (
-          <span>
-            <strong>Other: </strong>
-            {formatter.format(otherStack)}
-          </span>
-        ) : null}
       </div>
     </div>
   );

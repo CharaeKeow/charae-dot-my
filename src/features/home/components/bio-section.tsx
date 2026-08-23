@@ -1,4 +1,8 @@
+import { buttonVariants } from "@/components/ui/button";
 import { SectionContainer } from "@/components/ui/section-container";
+
+import { socials } from "../data/socials";
+import { cn } from "@/lib/utils";
 
 export const BioSection = () => {
   return (
@@ -30,6 +34,28 @@ export const BioSection = () => {
           to make sense of things along the way.
         </p>
       </div>
+      <div className="mt-4 flex gap-2">
+        {socials.map((social) => (
+          <SocialButton key={social.name} {...social} />
+        ))}
+      </div>
     </SectionContainer>
+  );
+};
+
+type SocialButtonProps = (typeof socials)[number];
+
+const SocialButton = ({ name, link, logo: Logo }: SocialButtonProps) => {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className={cn(buttonVariants({ size: "lg" }))}
+    >
+      <Logo className="size-5" aria-hidden="true" />
+      <span>{name}</span>
+      <span className="sr-only">(opens in a new tab)</span>
+    </a>
   );
 };
