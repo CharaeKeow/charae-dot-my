@@ -10,7 +10,7 @@ export const BioSection = () => {
       <h1 className="text-4xl lg:text-5xl">
         <span className="text-orange-main">Charae</span> Eh Sin
       </h1>
-      <div className="mt-6 lg:mt-8 space-y-4">
+      <div className="mt-6 space-y-4 lg:mt-8">
         <p>
           Hello, I am Charae,a full-stack developer from Malaysia, currently working on the platform
           team at{' '}
