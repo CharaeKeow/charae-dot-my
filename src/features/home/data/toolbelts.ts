@@ -4,14 +4,12 @@ import ReactLogo from '@/assets/svg/react-logo.svg';
 import TailwindLogo from '@/assets/svg/tailwind-logo.svg';
 import TypeScriptLogo from '@/assets/svg/typescript-logo.svg';
 
-import type React from 'react';
-
 type Toolbelt = {
   name: string;
   logo: React.FC<React.SVGProps<SVGElement>>;
 };
 
-export const toolbelts: Toolbelt[] = [
+export const preferredTools: Toolbelt[] = [
   {
     name: 'React',
     logo: ReactLogo,

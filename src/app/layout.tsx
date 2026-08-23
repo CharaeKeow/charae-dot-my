@@ -1,11 +1,11 @@
+// oxlint-disable-next-line import/no-unassigned-import
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
-import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
-
-import type { Metadata } from 'next';
+import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/header';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -30,9 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="h-screen">
           <Header />
           {children}

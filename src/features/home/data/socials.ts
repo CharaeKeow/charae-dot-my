@@ -1,22 +1,15 @@
-import { SOCIALS_SITE } from '../constants';
+import GithubLogo from '@/assets/svg/github-logo.svg';
+import LinkedInLogo from '@/assets/svg/linkedin-logo.svg';
 
-import type { Socials } from '../types';
-
-export const socials: Socials[] = [
+export const socials = [
   {
-    name: SOCIALS_SITE.Twitter,
-    link: 'https://twitter.com/charae_keow',
-  },
-  {
-    name: SOCIALS_SITE.BlueSky,
-    link: 'https://bsky.app/profile/charaekeow.bsky.social',
-  },
-  {
-    name: SOCIALS_SITE.GitHub,
+    name: 'GitHub',
     link: 'https://github.com/CharaeKeow',
+    logo: GithubLogo,
   },
   {
-    name: SOCIALS_SITE.LinkedIn,
+    name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/charaeehsin',
+    logo: LinkedInLogo,
   },
 ];
