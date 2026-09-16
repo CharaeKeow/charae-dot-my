@@ -27,7 +27,7 @@ export const ProjectCard = ({ data }: ProjectCardProps) => {
           </Badge>
         )}
       </div>
-      <p className="whitespace-pre-line">{description}</p>
+      <div className="whitespace-pre-line">{description}</div>
       <div className="mt-auto flex flex-col gap-y-3">
         <div className="flex flex-wrap gap-2">
           {stack.map((text, index) => (
